@@ -51,7 +51,7 @@ def find_preimage(table, L, r, h_value):
 def experiment(K, L, N):
     """Виконання експерименту для заданих параметрів K, L, N."""
     r = random.randbytes(14)  # Генеруємо випадковий 112-бітний вектор
-    print(f"\n=== Запуск експерименту для K={K}, L={L} ===")
+    print(f"\nЗапуск експерименту для K={K}, L={L}")
     print(f"Згенерований випадковий вектор r: {r.hex()}")
 
     table = generate_precomputation_table(K, L, r)
